@@ -28,13 +28,14 @@ function News() {
     const loaded = () => {
         return (
                 <div className='parentCont'>
-                    {data.results.map((f) => {
+                    {data.results.map((f,i) => {
                         return (
+                            <a href={f.url} target='_blank' key={i}>
                             <div className='thumpCont'>
-                                <img id='thumpNail' src={f.multimedia[2].url} />
-                                <p id='thumpNailTitle'>{f.title}</p>
+                                <img id='thumpNail' src={f.multimedia[1].url} />
+                                <h4 id='thumpNailTitle'>{f.title}</h4>
                             </div>
-
+                            </a>
                         )
                     })}
                 </div>
@@ -44,8 +45,7 @@ function News() {
     const notLoaded = () => {
         return (
             <div>
-                Hi Raam
-                <button onClick={() => clickMe()}>Click Me</button>
+                <h1>Loading Data</h1>
             </div>
         )
     }
