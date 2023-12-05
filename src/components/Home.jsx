@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+import Beverages from './Beverages'
+import Footer from './Footer'
+
 
 function Home() {
     const [data, setData] = useState(null)
@@ -16,10 +19,17 @@ function Home() {
     }, [])
 
     const loaded = () => {
-        const randInt = Math.floor(Math.random()*16)
+        const randInt = Math.floor(Math.random() * 16)
         console.log(randInt)
         return (
-            <div>This is Home:{data[randInt].text}</div>
+            <div className='homeParentDiv'>
+                <div className='homeQuote'>
+                    <h1>{data[randInt].text}</h1>
+                </div>
+                <div className='homeBev'>
+                    <Beverages />
+                </div>
+            </div>
         )
     }
 
