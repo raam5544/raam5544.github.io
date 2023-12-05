@@ -32,7 +32,7 @@ function News() {
                         return (
                             <a href={f.url} target='_blank' key={i}>
                             <div className='thumpCont'>
-                                <img id='thumpNail' src={f.multimedia[1].url} />
+                                <img id='thumpNail' src={f.multimedia[2].url} />
                                 <h4 id='thumpNailTitle'>{f.title}</h4>
                             </div>
                             </a>
