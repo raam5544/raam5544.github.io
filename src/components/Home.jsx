@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import Beverages from './Beverages'
 import Footer from './Footer'
+import Foods from './Foods'
 
 
 function Home() {
@@ -28,6 +29,7 @@ function Home() {
                 </div>
                 <div className='homeBev'>
                     <Beverages />
+                    <Foods/>
                 </div>
             </div>
         )
