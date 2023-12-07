@@ -34,6 +34,7 @@ function News() {
     }
 
     const loaded = () => {
+        <div></div>
         return (
             <div className='newsGrandparent'>
                 <div className='newsSelection'>
@@ -47,7 +48,8 @@ function News() {
                         <option value="fashion">Fashion</option>
                     </select>
                 </div>
-                <div>
+                <div className='newsSelection'>
+                    <label><h4>Subsection</h4></label>
                     <select name="" id="">
                         {data.results.map((j) => {
                             return (
