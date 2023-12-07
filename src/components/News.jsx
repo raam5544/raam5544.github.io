@@ -47,6 +47,15 @@ function News() {
                         <option value="fashion">Fashion</option>
                     </select>
                 </div>
+                <div>
+                    <select name="" id="">
+                        {data.results.map((j) => {
+                            return (
+                                <option>{j.subsection}</option>
+                            )
+                        })}
+                    </select>
+                </div>
                 <div className='newsParent'>
                     {data.results.map((f, i) => {
                         return (
