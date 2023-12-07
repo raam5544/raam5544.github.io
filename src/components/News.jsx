@@ -37,7 +37,7 @@ function News() {
         return (
             <div className='newsGrandparent'>
                 <div className='newsSelection'>
-                    <label><h3>Category</h3></label>
+                    <label><h3>Categories</h3></label>
                     <select onChange={handleSelect}>
                         <option value="world">World</option>
                         <option value="arts">Arts</option>
