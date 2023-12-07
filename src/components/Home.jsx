@@ -25,7 +25,7 @@ function Home() {
         return (
             <div className='homeParentDiv'>
                 <div className='homeQuote'>
-                    <h1>{data[randInt].text}</h1>
+                    <p>{data[randInt].text}</p>
                 </div>
                 <div className='homeBev'>
                     <Beverages />

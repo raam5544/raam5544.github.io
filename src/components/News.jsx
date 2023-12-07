@@ -7,9 +7,12 @@ function News() {
 
     const [data, setData] = useState(null)
 
+    const [select, setSelect] = useState('world')
+
+
     const fetchData = async () => {
         const apiKey = 'w6sAzkY0ubu4s1suvPVMkGwlegA3FxGF'
-        const url = `https://api.nytimes.com/svc/topstories/v2/world.json?api-key=${apiKey}`
+        const url = `https://api.nytimes.com/svc/topstories/v2/${select}.json?api-key=${apiKey}`
         const response = await fetch(url)
         const fetchedData = await response.json()
         console.log(fetchedData)
@@ -19,26 +22,44 @@ function News() {
 
     useEffect(() => {
         fetchData()
-    }, [])
+    }, [select])
 
     const clickMe = () => {
         fetchData()
     }
 
+    const handleSelect = (event) => {
+        let newValue = event.target.value
+        setSelect(newValue)
+    }
+
     const loaded = () => {
         return (
-                <div className='parentCont'>
-                    {data.results.map((f,i) => {
+            <div className='newsGrandparent'>
+                <div className='newsSelection'>
+                    <label><h3>Category</h3></label>
+                    <select onChange={handleSelect}>
+                        <option value="world">World</option>
+                        <option value="arts">Arts</option>
+                        <option value="home">Home</option>
+                        <option value="us">US</option>
+                    </select>
+                </div>
+                <div className='newsParent'>
+                    {data.results.map((f, i) => {
                         return (
-                            <a href={f.url} target='_blank' key={i}>
-                            <div className='thumpCont'>
-                                <img id='thumpNail' src={f.multimedia[2].url} />
-                                <h4 id='thumpNailTitle'>{f.title}</h4>
+                            <div key={i}>
+                                <a href={f.url} target='_blank'>
+                                    <div className='thumpCont'>
+                                        <img id='thumpNail' src={f.multimedia[2].url} />
+                                        <h4 id='thumpNailTitle'>{f.title}</h4>
+                                    </div>
+                                </a>
                             </div>
-                            </a>
                         )
                     })}
                 </div>
+            </div>
         )
     }
 

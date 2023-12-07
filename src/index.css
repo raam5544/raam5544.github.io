@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: white;
+  background-color: #efd364;
   align-items: center;
   width: 100%;
   height: 100px;
@@ -22,7 +22,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: white;
+  background-color: #efd364;
   height: 100%;
   width: 70%;
   align-items: center;
@@ -61,7 +61,7 @@ body {
   overflow: hidden;
   position: relative;
   height: 100%;
-  border-color: #4b5563;
+  border-color: #e7a63f;
   width: 100%;
   /* background-color: blue; */
   max-height: 70%;
@@ -105,7 +105,7 @@ body {
   gap: 16px;
   width: 200%;
   height: 250px;
-  /* background-color: red; */
+  background-color:#e7a63f;
   animation: slide 20s linear infinite;
 
   &:hover {
@@ -138,12 +138,18 @@ body {
   align-items: center;
   justify-content: center;
   font-style: italic;
-  font-weight: 10pt;
+  font-size: 20pt;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-image: url('https://i.pinimg.com/originals/87/6c/9f/876c9fb7eba555365922b5c283d69b8c.jpg');
   background-repeat: no-repeat;
-  color: #563b33;
+  color: black;
+  backface-visibility: hidden;
 }
+
+.homeQuote p{
+  font-size: 40pt;
+}
+
 
 .homeBev {
   height: 400px;
@@ -152,7 +158,7 @@ body {
 }
 
 .footerParent {
-  /* background-color: orange; */
+  background-color: #ea8144; 
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -175,6 +181,7 @@ body {
   object-fit: contain;
   margin: 0px;
   padding: 0px;
+  border-radius: 100px;
 }
 
 .footerMidd {
@@ -182,6 +189,8 @@ body {
   flex-direction: row;
   gap: 20px;
   margin-bottom: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
 }
 
 .foodsParent {
@@ -191,6 +200,10 @@ body {
   /* background-color: #563b33; */
   justify-content: center;
   height: 200px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f8efc5;
+  margin: 0px;
 }
 
 .foodImgs {
@@ -202,43 +215,49 @@ body {
   width: 200px;
   height: 200px;
   object-fit: cover;
+  border-radius: 10px;
+  border: solid black;
 }
 
-#foodIm1 {
-  z-index: 1;
-  position: absolute;
 
+
+.newsGrandparent{
+  display: flex;
+  flex-direction: column;
 }
 
-#foodIm2 {
-  z-index: 2;
-  position: absolute;
-
+.newsParent{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: rgb(37, 65, 65);
+  justify-content: center;
+  background-color: #f8efc5;
 }
 
-#foodIm3 {
-  z-index: 3;
-  position: absolute;
-
+.newsSelection{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #e7a63f;
 }
 
-#foodIm4 {
-  z-index: 4;
-  position: absolute;
-  right: -500px;
-  top: 5px;
+.newsSelection select{
+  height: 20px;
 }
 
-#foodIm5 {
-  z-index: 5;
-  position: absolute;
-  right: -400px;
-  top: 5px;
+a{
+  text-decoration: none;
+  color: black;
 }
 
-#foodIm6 {
-  z-index: 6;
-  position: absolute;
-  left: -200px;
-  top: 5px;
+.thumpCont{
+  border-radius: 10px;
+}
+
+.thumpCont:hover{
+  background-color: grey;
+  transform: translate(5px,5px);
 }
