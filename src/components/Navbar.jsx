@@ -6,13 +6,13 @@ function Navbar() {
         <div className='links'>
             <img src='https://bestoflife.com/wp-content/uploads/2022/09/BOL_long_nocircle-1.webp' />
             <div className='linkChild'>
-                <div>
+                <div className='linkTags'>
                     <Link to="/"><h3>Home</h3></Link>
                 </div>
-                <div>
+                <div className='linkTags'>
                     <Link to='/News'><h3>News</h3></Link>
                 </div>
-                <div>
+                <div className='linkTags'>
                     <Link to='/News'><h3>Weather</h3></Link>
                 </div>
                 <div id='signInBar'>

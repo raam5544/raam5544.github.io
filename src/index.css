@@ -28,6 +28,12 @@ body {
   align-items: center;
 }
 
+.linkTags:hover{
+  background-color: aliceblue;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
 #signInlogo {
   background-color: transparent;
   mix-blend-mode: multiply;
