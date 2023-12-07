@@ -10,10 +10,10 @@ I was able to learn how to fetch data from the api, store it as a state and rend
 
 ## Table of Contents 
 
-- [Installation]
-- [Usage]
-- [Credits]
-- [License]
+- Installation
+- Usage
+- Credits
+- License
 
 ## Installation
 
