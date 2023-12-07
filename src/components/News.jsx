@@ -34,29 +34,30 @@ function News() {
     }
 
     const loaded = () => {
-        <div></div>
         return (
             <div className='newsGrandparent'>
-                <div className='newsSelection'>
-                    <label><h3>Categories</h3></label>
-                    <select onChange={handleSelect}>
-                        <option value="world">World</option>
-                        <option value="arts">Arts</option>
-                        <option value="home">Home</option>
-                        <option value="us">US</option>
-                        <option value="business">Business</option>
-                        <option value="fashion">Fashion</option>
-                    </select>
-                </div>
-                <div className='newsSelection'>
-                    <label><h4>Subsection</h4></label>
-                    <select name="" id="">
-                        {data.results.map((j) => {
-                            return (
-                                <option>{j.subsection}</option>
-                            )
-                        })}
-                    </select>
+                <div className='newsSelectionParent'>
+                    <div className='newsSelection'>
+                        <label><h3>Categories</h3></label>
+                        <select onChange={handleSelect}>
+                            <option value="world">World</option>
+                            <option value="arts">Arts</option>
+                            <option value="home">Home</option>
+                            <option value="us">US</option>
+                            <option value="business">Business</option>
+                            <option value="fashion">Fashion</option>
+                        </select>
+                    </div>
+                    <div className='newsSelection'>
+                        <label><h4>Subsection</h4></label>
+                        <select name="" id="">
+                            {data.results.map((j) => {
+                                return (
+                                    <option>{j.subsection}</option>
+                                )
+                            })}
+                        </select>
+                    </div>
                 </div>
                 <div className='newsParent'>
                     {data.results.map((f, i) => {
