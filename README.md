@@ -68,6 +68,8 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ## Learn More
 
-## 
+## Crdits
+
+Thanks to the NewYork Times for providing a free API key. And thanks to sites that provided images and logos. 
 
 
