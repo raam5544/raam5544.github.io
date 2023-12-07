@@ -44,6 +44,7 @@ function News() {
                         <option value="home">Home</option>
                         <option value="us">US</option>
                         <option value="business">Business</option>
+                        <option value="fashion">Fashion</option>
                     </select>
                 </div>
                 <div className='newsParent'>
