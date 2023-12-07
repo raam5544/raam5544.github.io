@@ -6,6 +6,17 @@ This app is perceived to be the first app some one could access as they wake-up 
 
 This app solve the problem of having different apps for different set of morning routines of a person. rather than going for several apps to full fill their need. this "Personal App" would have everything in it.
 
+## Table of Contents 
+
+- [Installation]
+- [Usage]
+- [Credits]
+- [License]
+
+## Installation
+
+Create
+
 
 
 # Getting Started with Create React App
