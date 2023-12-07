@@ -140,7 +140,7 @@ body {
 .homeQuote {
   height: 300px;
   width: 100%;
-  background-color: brown;
+  /* background-color: brown; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -155,7 +155,7 @@ body {
 
 .homeQuote p {
   font-size: 40pt;
-  color: #FF851B;
+  color: black;
   font-weight: bolder;
   font-weight: 600;
   font-style: italic;
