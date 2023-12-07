@@ -17,6 +17,7 @@ I was able to learn how to fetch data from the api, store it as a state and rend
 
 ## Installation
 
+We don't need gto install or configure tools like webpack or Babel. they are pre-configured when creating the appm using "npx create-react-app"
 
 
 ## Usage
@@ -67,5 +68,6 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ## Learn More
 
+## 
 
 
