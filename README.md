@@ -17,6 +17,11 @@ This app solve the problem of having different apps for different set of morning
 
 Create
 
+## Usage
+
+```md
+    ![alt text](assets/screenshot.png)
+    ```
 
 
 # Getting Started with Create React App
