@@ -1,5 +1,9 @@
 # <Project Title> "News App"
 
+## <Description>
+
+This app is perceived to be the first app some one could access as they wake-up in the morning. It is then can be used to view current news and weather. And more personally, this would suggest morning beverages and morning breakfast for the user based on their preference.
+
 
 
 # Getting Started with Create React App
