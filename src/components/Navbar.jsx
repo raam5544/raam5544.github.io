@@ -20,7 +20,7 @@ function Navbar() {
                     <p>Sign In</p>
                     <img id='signInlogo' src='https://cdn-icons-png.flaticon.com/512/8819/8819487.png' />
                     <img id='blockLogo' src="https://www.lego.com/_next/static/images/insidersOut-1007c87df3063963a6a3f7de243ac98e.svg" alt="" />
-                    <p>Join LEGO® Insiders</p>
+                    <p>Join Personal App® Insiders</p>
                 </div>
             </div>
         </div>
