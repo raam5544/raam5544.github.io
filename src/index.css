@@ -92,7 +92,7 @@ body {
   }
 
   border-radius: 20%;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
 }
 
 #bevItemImg {
@@ -214,7 +214,7 @@ body {
   height: 200px;
   justify-content: space-around;
   align-items: center;
-  background-color: #f8efc5;
+  /* background-color: #f8efc5; */
   margin: 0px;
 }
 

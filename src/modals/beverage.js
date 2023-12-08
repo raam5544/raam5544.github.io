@@ -4,15 +4,15 @@ const beverage = [{
 },
 {
     imgUrl: "https://insanelygoodrecipes.com/wp-content/uploads/2021/06/Peanut-Butter-Banana-Smoothie-683x1024.webp",
-    title: 'Text 2'
+    title: 'Smoothie'
 },
 {
     imgUrl: "https://insanelygoodrecipes.com/wp-content/uploads/2021/06/Iced-Coffee-683x1024.webp",
-    title: 'Text 2'
+    title: 'Coffee'
 },
 {
     imgUrl: "https://insanelygoodrecipes.com/wp-content/uploads/2021/07/Chai-Tea-Latte-683x1024.webp",
-    title: 'Text 2'
+    title: 'Tea'
 },
 {
     imgUrl: "https://insanelygoodrecipes.com/wp-content/uploads/2021/10/Strawberry-Smoothie-with-Fresh-Strawberries-683x1024.webp",

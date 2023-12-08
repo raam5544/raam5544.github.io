@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { createContext } from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react';
 import '../App.css';
+
 
 function News() {
 

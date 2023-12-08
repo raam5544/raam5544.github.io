@@ -12,7 +12,6 @@ function Beverages() {
                         <div className="bevItem" key={i}>
 
                             <img id='bevItemImg' src={e.imgUrl} />
-
                             {/* <div>
                                 {e.title}
                                 {console.log(e)}
