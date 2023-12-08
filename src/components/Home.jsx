@@ -25,7 +25,8 @@ function Home() {
         return (
             <div className='homeParentDiv'>
                 <div className='homeQuote'>
-                    <p>{data[randInt].text}</p>
+                    <img id='homeQuoteImg' src='https://i.pinimg.com/originals/87/6c/9f/876c9fb7eba555365922b5c283d69b8c.jpg'></img>
+                    <p>"{data[randInt].text}"</p>
                 </div>
                 <div className='homeBev'>
                     <Beverages />
