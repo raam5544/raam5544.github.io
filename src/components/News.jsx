@@ -71,7 +71,7 @@ function News() {
                                 <div key={i}>
                                     <a href={f.url} target='_blank'>
                                         <div className='thumpCont'>
-                                            <img id='thumpNail' src={f.multimedia[0].url} alt={'Hi'} onError={(e) => handleImgLoadingError(e)} />
+                                            <img id='thumpNail' src={f.multimedia[0].url} onError={(e) => handleImgLoadingError(e)} />
                                             <h4 id='thumpNailTitle'>{f.title}</h4>
                                         </div>
                                     </a>
