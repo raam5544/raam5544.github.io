@@ -254,10 +254,18 @@ body {
   align-items: center;
   gap: 20px;
   background-color: #e7a63f;
+  width: 50%;
 }
 
 .newsSelection select {
   height: 20px;
+}
+
+.newsSelectionParent{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
 }
 
 a {
