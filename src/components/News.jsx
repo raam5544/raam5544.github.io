@@ -26,6 +26,10 @@ function News() {
         fetchData()
     }, [select])
 
+    useEffect(() => {
+        fetchData()
+    }, [subselect])
+
     const clickMe = () => {
         fetchData()
     }
@@ -33,6 +37,7 @@ function News() {
     const handleSelect = (event) => {
         let newValue = event.target.value
         setSelect(newValue)
+        setSubselect('')
     }
     
     const handleSubSelect = (event) => {
