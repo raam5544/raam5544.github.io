@@ -61,7 +61,7 @@ function News() {
                 <div className='newsParent'>
                     {data.results.map((f, i) => {
                         if (f.multimedia === null) {
-                            return (<div style={{background:'red'}}>hi</div>)
+                            return (<div></div>)
                         } else {
                             return (
                                 <div key={i}>
