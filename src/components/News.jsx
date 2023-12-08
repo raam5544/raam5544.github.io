@@ -10,6 +10,8 @@ function News() {
 
     const [select, setSelect] = useState('world')
 
+    const [subselect, setSubselect] = useState('')
+
     const fetchData = async () => {
         const apiKey = 'w6sAzkY0ubu4s1suvPVMkGwlegA3FxGF'
         const url = `https://api.nytimes.com/svc/topstories/v2/${select}.json?api-key=${apiKey}`
@@ -32,6 +34,13 @@ function News() {
         let newValue = event.target.value
         setSelect(newValue)
     }
+    
+    const handleSubSelect = (event) => {
+        let newValue = event.target.value
+        setSubselect(newValue)
+    }
+
+
 
     const loaded = () => {
         return (
@@ -50,10 +59,10 @@ function News() {
                     </div>
                     <div className='newsSelection'>
                         <label><h4>Subsection</h4></label>
-                        <select name="" id="">
+                        <select name="" id="" onChange={handleSubSelect}>
                             {data.results.map((j) => {
                                 return (
-                                    <option>{j.subsection}</option>
+                                    <option value={j.subsection}>{j.subsection}</option>
                                 )
                             })}
                         </select>
@@ -63,7 +72,7 @@ function News() {
                     {data.results.map((f, i) => {
                         if (f.multimedia === null) {
                             return (<div></div>)
-                        } else {
+                        } else if (subselect===f.subsection || subselect==='') {
                             return (
                                 <div key={i}>
                                     <a href={f.url} target='_blank'>
