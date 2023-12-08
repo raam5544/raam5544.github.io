@@ -9,6 +9,9 @@ function News() {
 
     const [select, setSelect] = useState('world')
 
+    const handleImgLoadingError = (e) => {
+        e.target.src = 'https://t3.ftcdn.net/jpg/00/27/57/96/360_F_27579652_tM7V4fZBBw8RLmZo0Bi8WhtO2EosTRFD.jpg'
+    }
 
     const fetchData = async () => {
         const apiKey = 'w6sAzkY0ubu4s1suvPVMkGwlegA3FxGF'
@@ -61,16 +64,21 @@ function News() {
                 </div>
                 <div className='newsParent'>
                     {data.results.map((f, i) => {
-                        return (
-                            <div key={i}>
-                                <a href={f.url} target='_blank'>
-                                    <div className='thumpCont'>
-                                        <img id='thumpNail' src={f.multimedia[2].url} />
-                                        <h4 id='thumpNailTitle'>{f.title}</h4>
-                                    </div>
-                                </a>
-                            </div>
-                        )
+                        if (f.multimedia === null) {
+                            return (<div style={{background:'red'}}>hi</div>)
+                        } else {
+                            return (
+                                <div key={i}>
+                                    <a href={f.url} target='_blank'>
+                                        <div className='thumpCont'>
+                                            <img id='thumpNail' src={f.multimedia[0].url} alt={'Hi'} onError={(e) => handleImgLoadingError(e)} />
+                                            <h4 id='thumpNailTitle'>{f.title}</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                            )
+                        }
+
                     })}
                 </div>
             </div>
