@@ -19,7 +19,7 @@ function App() {
       <bevContext.Provider value={beverage}>
         <Navbar />
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path='/Home' element={<Home />} />
           <Route path='/News' element={<News />} />
         </Routes>
         <Footer/>
