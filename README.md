@@ -22,7 +22,9 @@ We don't need gto install or configure tools like webpack or Babel. they are pre
 
 ## Usage
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The news component of this App dynamically fetches data from "NewYork Times" API and dynamically displays the data in the component. 
+
+"Subsection" dropdown menu of this component is dynamically created based on the data of the API.
 
 ## Available Scripts
 
